@@ -1,0 +1,20 @@
+<div class="row">
+    <form onsubmit="return false;" data-ng-submit="getCalendar()">
+        <div class="col-xs-8">
+            <textarea data-ng-model="$parent.birthdays" class="form-control"></textarea>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <input type="text" class="form-control" data-ng-model="$parent.year" placeholder="Year" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Update">
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+
+

@@ -1,0 +1,15 @@
+{
+  "name": "Birthday task",
+  "version": 1,
+  "dependencies": {
+    "angular-ui-router": "~0.2.14",
+    "angular-resource": "~1.4.1",
+    "angular-sanitize": "~1.4.2",
+    "jquery": "~2.1.4",
+    "angular-ui-router-styles": "~0.0.6",
+    "oclazyload": "~1.0.2",
+    "angular": "^1.5.4",
+    "bootstrap": "^3.3.6",
+    "DateJS": "datejs#^1.0.0-rc3"
+  }
+}

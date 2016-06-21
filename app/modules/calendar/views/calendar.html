@@ -1,0 +1,41 @@
+<div class="panel-group" data-ng-if="calendar.length">
+    <div class="panel panel-default" data-ng-repeat="month in calendar">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="javascript:" data-toggle="collapse" data-target="#collapse_[[$index]]">[[ months[$index] ]]</a>
+            </h4>
+        </div>
+        <div id="collapse_[[$index]]" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="day" data-ng-if="(month[0].dayOfTheWeek - 1) != 0" style="width: [[ (month[0].dayOfTheWeek - 1 != -1)? (month[0].dayOfTheWeek - 1) * 14 : 84 ]]%"></div>
+                <div class="day" data-ng-repeat="day in month">
+                    <div class="header">
+                        <div class="pull-left">
+                            [[ $index + 1 ]]
+                        </div>
+                        <div class="pull-right">[[ days[ day.dayOfTheWeek ] ]]</div>
+                    </div>
+                    <div class="body" data-ng-class="{'empty': !day.persons.length,
+                            'single': day.persons.length == 1,
+                            'miniBlocks': day.persons.length > 1 && day.persons.length < 5,
+                            'microBlocks': day.persons.length >= 5 && day.persons.length < 10,
+                            'nanoBlocks': day.persons.length > 10
+                        }">
+                        <div data-ng-repeat="person in day.persons" class="persons person_[[$index]]">
+                            <div class="name">
+                                [[ person.name | formatName ]]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-ng-if="!calendar.length">
+    <div class="col-xs-12">
+        <p class="text-muted bg-danger">Please, provide the year</p>
+    </div>
+</div>
