@@ -74,33 +74,3 @@
         }
     
 })();
-
-
-/*[
- {
- "name": "Tyrion Lannister",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }, {
- "name": "Boston Orlando",
- "birthday": "12/02/2016"
- }
- ]
-* */
