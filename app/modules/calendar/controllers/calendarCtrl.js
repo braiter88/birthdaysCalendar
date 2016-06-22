@@ -58,7 +58,6 @@
                     }
                 }
 
-console.log(calendar);
                 return calendar;
             };
 
