@@ -65,9 +65,6 @@
                 $scope.calendar = $scope.constructCalendar();
             };
 
-            $scope.formatName = function(name){
-                return name.replace(/\w(?=\w)/gi,'');
-            }
         }
 
         function formatName(){
